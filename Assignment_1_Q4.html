@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = "";
+		function protect_email(a)
+		{
+			let email = a.split('@')[0];
+			let sub2 = a.slice(0, email.length -5);
+			let sub= email.slice(-1,-4);
+			sub = "....";
+			return sub2+sub+"@"+a.split('@')[1];
+		}
+		console.log(protect_email("eddygrant@example.com"));
+	</script>
+</body>
+</html>
