@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Assignment 1</title>
+</head>
+<body>
+		<h1>Question 2</h1>
+		<script >
+		let n	=	prompt("enter the value of n for iterations");
+		
+		let prime =0;
+		for (var i = 0; i < n; i++)
+		 {
+				
+			var current_Number = prompt("Enter the current number");	
+			if(current_Number%2 ==0)
+			{
+				document.write("Number is even");
+			}
+			else
+			{
+				document.write("Number is odd");
+
+			}
+			if(current_Number>1)
+			{
+			for(var j =2; j<current_Number;j++)
+			{
+				if((current_Number%j) == 0)
+				{
+					prime++;	
+				}
+			}
+			}
+			//document.write(prime);
+			if(prime == 0)
+				document.write(" and Prime");
+
+			document.write("<br>");
+		}
+		</script>
+</body>
+</html>

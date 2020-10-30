@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+</head>
+<body>
+	<h1>Question No. 1</h1><br>
+	<script type="text/javascript">
+		let a = prompt("Enter a first number");
+		let b = prompt("Enter second number");
+		let c = prompt("Enter third number");
+
+		let array = [a,b,c];
+		//let e ="";
+		// d.sort().reverse();
+		// alert(d);
+
+		// for(var i = 0; i<d.length; i++)
+		// {
+		// 	if(d[i] < d[i+1])
+		// 	{
+		// 		let temp = d[i+1];
+
+		// 		d[i+1] =d[i];
+		// 		d[i] = temp;
+		// 	}
+		// 	e += d[i]; 
+		// }
+		// document.write(e.split());
+		array.sort(function(a,b){return (a-b)});
+		alert(array.reverse());
+	</script>
+
+</body>
+</html>
