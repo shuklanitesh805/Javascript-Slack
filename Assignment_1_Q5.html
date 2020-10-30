@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a ="";
+		var b = "";
+		function capitalize_Words(a)
+		{
+			var l = [];
+			l = a.split(" ");
+			for(var i = 0; i<l.length;i++)
+			{
+				b += l[i].substr(0,1).toUpperCase();
+				b += l[i].substr(1, l[i].length)
+				b += " ";
+			}
+			return console.log(b);
+		}
+		console.log(capitalize_Words('hi from skillsanta'));
+	</script>
+</body>
+</html>
