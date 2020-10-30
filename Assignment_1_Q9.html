@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aA</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let Celcicus = prompt("Enter the value in Celcicus");
+		ctof(Celcicus);
+		function ctof(Celcicus)
+		{
+			var f  =  (Celcicus-32) * 5 / 9;
+			document.write(`${Celcicus}'C is ${f}'F` +"<br>");
+			ftoc(f);
+		}
+		function ftoc(f)
+		{
+			let c = f * 9 / 5 + 32
+			document.write(`${f}'F is ${c}'C`);
+		}
+	</script>
+</body>
+</html>
