@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = "";
+		let b = "";
+		var count  = 0;
+		function search_word(a,b)
+		{	
+			if(a.search(b))
+			{
+				count++;
+			}
+			return (`${b} was found ${count} times`);
+		}
+
+		console.log(search_word('The quick brown fox', 'fox')); 
+		//console.log(search_word('aa, bb, cc, dd, aa', 'aa'));
+
+	</script>
+</body>
+</html>
