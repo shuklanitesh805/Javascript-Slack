@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Last Question</title>
+</head>
+<body>
+	<script type="text/javascript">
+	// 	var string =  prompt("Enter a string with lower and uper case letters");
+	// 	var newString = "";
+	// 	swap(string);
+	// 	function swap(string){
+	// 	for(var i = 0; i<string.length;i++)
+	// 	{	if(string[i] === string[i].toLowercase())
+	// 		{
+	// 			newString += string[i].toUppercase();
+	// 		}
+	// 		else
+	// 		{
+	// 			newString += string[i].toLowercase();
+	// 		}
+
+			
+	// 	}
+	// 	//document.write(string);
+	// 	console.log(newString);
+	// }
+	var swapCase = function(letters){
+    var newLetters = "";
+    for(var i = 0; i<letters.length; i++){
+        if(letters[i] === letters[i].toLowerCase()){
+            newLetters += letters[i].toUpperCase();
+        }else {
+            newLetters += letters[i].toLowerCase();
+        }
+    }
+    document.write(newLetters);
+    return newLetters;
+}
+
+var text = prompt("Enter a string with upper and lower letters");//'So, today we have REALLY good day';
+
+var swappedText = swapCase(text); 
+	</script>
+</body>
+</html>
